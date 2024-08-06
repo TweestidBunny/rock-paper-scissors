@@ -1,14 +1,13 @@
-// Create function 'playerChoice'. Change to int
+// Change to int using unary plus
 let getPlayerChoice = () => +prompt('1: Rock, 2: Paper, 3: Scissors') - 1;
 
-// Create function 'getComputerChoice'. Change to int
+// Change to int using unary plus
 let getComputerChoice = () => +(Math.random() * 2).toFixed(0);
 
-let playerScore = 0; // Create score counter for Player
+let playerScore = 0;
 
-let computerScore = 0; // Create score counter for Computer
+let computerScore = 0;
 
-// Compare player choice and computer choice.
 function compareChoice(pChoice, cChoice) {
   if (pChoice === 0) {
     cChoice === 1 ? computerScore++ : cChoice === 2 ? playerScore++ : console.log('Tie');
@@ -19,7 +18,7 @@ function compareChoice(pChoice, cChoice) {
   }
 }
 
-// Create game loop.
+// Game loop.
 while (playerScore < 5 && computerScore < 5) {
   compareChoice(getPlayerChoice(), getComputerChoice());
   console.log(`Player Wins: ${playerScore}`);
