@@ -9,5 +9,6 @@ The player will make a choice through a prompt, then
 the computer's choice will be made using the random
 method.
 
-There will only be a single turn, then the page will
-need to be reloaded to play again.
+The game will be played until either the Player or the
+Computer gets 5 wins. Then the page will need to be
+refreshed in order to play again.
