@@ -1,18 +1,12 @@
-// Create function 'playerChoice'.
-// Change to int.
+// Create function 'playerChoice'. Change to int
 let getPlayerChoice = () => +prompt('1: Rock, 2: Paper, 3: Scissors') - 1;
-// console.log(playerChoice())
 
-// Create function 'getComputerChoice'.
-// Change to int.
+// Create function 'getComputerChoice'. Change to int
 let getComputerChoice = () => +(Math.random() * 2).toFixed(0);
-// console.log(getComputerChoice())
 
-// Create win counter for Player
-let playerScore = 0;
+let playerScore = 0; // Create score counter for Player
 
-// Create win counter for Computer
-let computerScore = 0;
+let computerScore = 0; // Create score counter for Computer
 
 // Compare player choice and computer choice.
 function compareChoice(pChoice, cChoice) {
@@ -32,5 +26,5 @@ while (playerScore < 5 && computerScore < 5) {
   console.log(`Computer Wins: ${computerScore}`);
 }
 
-// console.log winner.
+// Show winner.
 console.log(playerScore > computerScore ? 'Player Wins!' : 'Computer Wins!')
