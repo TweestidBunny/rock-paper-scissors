@@ -43,7 +43,8 @@ footer {
   font-size: 2.5rem;
 }
 
-main {
+main,
+#winner {
   /* border: 1px solid gray; */
   flex: 5;
   display: flex;
@@ -69,7 +70,8 @@ main {
   font-size: 3rem;
 }
 
-p {
+#playerSelection p,
+#computerSelection p {
   flex: none;
   padding: .5rem 0;
   margin: 0;
@@ -104,4 +106,16 @@ button:hover {
 
 .playBtn {
   width: 65%;
+}
+
+#winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
+
+.hidden,
+#winner.hidden {
+  display: none;
 }
