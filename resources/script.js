@@ -1,26 +1,3 @@
-// Change to int using unary plus
-// let getPlayerChoice = () => +prompt('1: Rock, 2: Paper, 3: Scissors') - 1;
-
-// Change to int using unary plus
-// let getComputerChoice = () => +(Math.random() * 2).toFixed(0);
-
-// let currentPlayerScore = 0;
-
-// let currentComputerScore = 0;
-
-// Game loop.
-// while (currentPlayerScore < 5 && currentComputerScore < 5) {
-//   compareChoice(getPlayerChoice(), getComputerChoice());
-//   console.log(`Player Wins: ${currentPlayerScore}`);
-//   console.log(`Computer Wins: ${currentComputerScore}`);
-// }
-
-// Show winner.
-// console.log(currentPlayerScore > currentComputerScore ? 'Player Wins!' : 'Computer Wins!')
-
-
-// Elements needing to be targeted with querySelector:
-
 const setPlayerScore = document.querySelector('#playerScore');
 const setComputerScore = document.querySelector('#computerScore');
 
@@ -41,10 +18,6 @@ let currentPlayerScore = 0;
 let currentComputerScore = 0;
 
 let playerSelection;
-
-//   When game is over, show 'Play Again' button.
-
-// Compare each selection to see who wins.
 
 gameBtns.forEach(btn => {
   btn.addEventListener('click', e => {
@@ -101,6 +74,7 @@ function getComputerChoice() {
   return puterPick;
 }
 
+// toggle off hidden class
 function toggleOffHidden(...nodeList) {
   for (let nodeLI of nodeList) {
     if (nodeLI.length > 1) {
@@ -115,6 +89,7 @@ function toggleOffHidden(...nodeList) {
   }
 }
 
+// toggle on hidden class
 function toggleOnHidden(...nodeList) {
   for (let nodeLI of nodeList) {
     if (nodeLI.length > 1) {
@@ -128,11 +103,3 @@ function toggleOnHidden(...nodeList) {
     }
   }
 }
-
-// const images = document.querySelectorAll('#playerImage img');
-// const computerImages = document.querySelectorAll('#computerImage img');
-
-// playerImages[0].classList.toggle('hidden');
-// computerImages[1].classList.toggle('hidden');
-
-// gameBtns[0].addEventListener('click', () => toggleOnHidden(main));
