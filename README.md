@@ -1,3 +1,20 @@
+Update 1; 8/8/24:
+Create a UI for game.
+
+Create structure using HTML, style with CSS.
+
+Using DOM manipulation with JavaScript, create
+dynamic functionality so game can be played
+by pressing on buttons, with a fully working
+visual game window.
+
+Win/Lose logic will stay the same, but now
+the score will be tracked and shown on the screen
+for both the player and the computer.
+
+The game will no longer be played in the console.
+
+----------------------------------------------
 This is a very simple rock paper scissors game.
 
 It will be played completely in the console.
