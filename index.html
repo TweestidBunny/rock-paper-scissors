@@ -19,19 +19,37 @@
           <div id="computerScore">0</div>
         </header>
 
-        <main>
+        <div id="winner" class="hidden">
+          <p id="win">Player Wins!</p>
+        </div>
+
+        <main id="gameUI">
           <div id="playerSelection">
             <p>Player</p>
-            <div class="imageContainer"></div>
+            <div id="playerImage" class="imageContainer">
+              <img src="images/rock.png" class="hidden">
+              <img src="images/paper.png" class="hidden">
+              <img src="images/scissors.svg" class="hidden">
+            </div>
           </div>
           <div id="vs"><sup>V</sup><sub>S</sub></div>
           <div id="computerSelection">
             <p>Computer</p>
-            <div class="imageContainer"></div>
+            <div id="computerImage" class="imageContainer">
+              <img src="images/rock.png" class="hidden">
+              <img src="images/paper.png" class="hidden">
+              <img src="images/scissors.svg" class="hidden">
+            </div>
           </div>
         </main>
 
-        <footer></footer>
+        <footer>
+          <button id="0" class="gameBtn">Rock</button>
+          <button id="1" class="gameBtn">Paper</button>
+          <button id="2" class="gameBtn">Scissors</button>
+          <button id="nextRound" class="playBtn hidden">Next Round</button>
+          <button id="playAgain" class="playBtn hidden">Play Again</button>
+        </footer>
       </div>
     </div>
   </body>
